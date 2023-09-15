@@ -1,0 +1,52 @@
+﻿@model IEnumerable<finalDBMSPRo.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.ProId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pro_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pro_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CatName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Pro_Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Pro_Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Category.CatName)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.ProId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.ProId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.ProId })
+    </td>
+</tr>
+}
+
+</table>

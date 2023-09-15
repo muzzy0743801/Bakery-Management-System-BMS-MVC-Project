@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d53302514ef84d4a84d7265c2c3d0bee" Name="Diagram1">
+        <EntityTypeShape EntityType="DBMS_BMSModel.Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Customer" Width="1.5" PointX="5.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Employee" Width="1.5" PointX="5.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.FeedBack" Width="1.5" PointX="8" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Order" Width="1.5" PointX="11" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Product" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.ProductIngredient" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Stock" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMS_BMSModel.Supplier" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__Product__Categor__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__FeedBack__Custom__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__Orders__Customer__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__FeedBack__Employ__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__Orders__Employee__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__ProductIn__Produ__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__Stock__Product_i__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMS_BMSModel.FK__Stock__Supplier___44FF419A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

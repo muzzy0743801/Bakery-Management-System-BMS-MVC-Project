@@ -1,0 +1,54 @@
+﻿@model IEnumerable<finalDBMSPRo.Models.FeedBack>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FbId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descriptions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fb_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.CustomerId)
+        </th>
+        
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.FbId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Descriptions)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Fb_Date)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Customer.CustomerId)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.FbId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.FbId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.FbId })
+    </td>
+</tr>
+}
+
+</table>

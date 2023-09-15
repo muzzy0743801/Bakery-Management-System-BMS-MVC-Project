@@ -1,0 +1,34 @@
+﻿@model finalDBMSPRo.Models.ProductIngredient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductIngredient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proc_Ing_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proc_Ing_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Pro_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.Pro_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Proc_Ing_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
